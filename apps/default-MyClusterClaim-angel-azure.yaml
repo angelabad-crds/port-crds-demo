@@ -1,0 +1,12 @@
+apiVersion: angelabad.me/v1alpha1
+kind: MyClusterClaim
+metadata:
+  name: angel-azure
+  namespace: default
+spec:
+  compositionRef:
+    name: azure-cluster
+  parameters:
+    nodes: 1
+    size: small
+    version: "1.28"
